@@ -374,7 +374,7 @@ export function inline(s, env) {
         const k = findSingleStar(s, j + 1);
         if (k > j + 1) {
           out += `<em>${inline(s.slice(j + 1, k), env)}</em>`;
-          i = j + 1;
+          i = k + 1;
         } else {
           out += '*';
           i = j + 1;
